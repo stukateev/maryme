@@ -1,0 +1,636 @@
+h2{
+    font-family: UntitledJapanese, serif;
+    font-size: 130px;
+    color: white;
+}
+.header{
+
+}
+.header__date{
+
+}
+.header_e{
+    margin: 0;
+    margin-top: 55px;
+}
+.header_v{
+    margin: 0;
+}
+.header__logo{
+    max-width: 900px;
+    height: 300px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+.header__img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    height: 350px;
+    z-index: -1;
+    animation: rotate infinite 6s linear;
+
+}
+.header__date{
+    font-size: 50px;
+    font-family: Arial;
+    font-weight: lighter;
+    text-align: right;
+    margin: 0;
+    margin-top: 150px;
+}
+
+.header__run-text{
+    font-size: 70px;
+    font-family: Montserrat-Light;
+    color: white;
+    width: 100%;
+}
+.header__run-text_bottom{
+    margin-top: 50px;
+}
+
+.header__chose-color{
+    cursor: pointer;
+    width: 300px;
+    height: 50px;
+    font-family: Montserrat-Bold;
+    font-size: 25px;
+    border: none;
+    box-shadow: #735ca2 10px 10px 10px;
+    border-radius: 5px;
+    text-shadow: rgba(115, 92, 162, 0.56) 2px 2px 10px ;
+    margin-top: 20px;
+    margin-left: auto ;
+    margin-right: auto;
+    display: block;
+    transition: .3s linear;
+}
+.header__chose-color:hover{
+    transform: translateX(-5px) translateY(-5px) scale(1.1);
+    box-shadow: #735ca2 12px 12px 10px;
+}
+
+@media screen and (max-width: 768px) {
+    h2{
+        text-align: center;
+        font-size: 60px;
+    }
+    .header__logo{
+        height: 300px;
+        padding-top: 50px;
+    }
+    .header__img{
+        height: 300px;
+    }
+    .header_e{
+        margin-top: 90px;
+    }
+    .header__date{
+        margin-top: 220px;
+        margin-right: 20px;
+        font-size: 30px;
+    }
+    .header__run-text{
+        font-size: 60px;
+    }
+}
+
+.wedding-party{
+    margin-top: 200px;
+}
+
+.wedding-party__title{
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    border-radius: 1000px 1000px 0 0 ;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.wedding-party__title-img{
+    margin-top: 150px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wedding-party__description{
+    background-color: black;
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.wedding-party__description-text{
+    font-family: "Montserrat-Light", serif;
+    color: white;
+    margin: 0;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.wedding-party__description-text-pink{
+    color: #ff0080;
+    font-family: "Montserrat-Bold", serif;
+}
+.wedding-party__description-img{
+    width: 600px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    .wedding-party{
+        margin-top: 100px;
+    }
+    .wedding-party__title-img{
+        width: 90%;
+    }
+    .wedding-party__title{
+        width: 100%;
+    }
+    .wedding-party__description{
+
+        width: 100%;
+    }
+    .wedding-party__description-text{
+
+        width: 90%;
+    }
+    .wedding-party__description-img{
+        width: 90%;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+
+}
+
+.date__title{
+    font-family: 'Martian Mono', monospace;
+    font-size: 80px;
+    color: white;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 60px;
+}
+table {
+    margin-top: 100px;
+    clear: both;
+    border: none;
+    border-radius: 3px;
+    border-collapse: collapse;
+    color: #444;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+tbody{
+    border: none;
+}
+td {
+    border: none;
+    height: 48px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Montserrat-Light, serif;
+    width: 14.28571429%;
+    color: white;
+    font-size: 30px;
+}
+
+thead td {
+    border: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    text-align: left;
+    font-family: Montserrat-Light, serif;
+}
+td.not-current {
+    color: rgba(192, 192, 192, 0.58);
+}
+.table-month-year{
+    text-align: right;
+    color: white ;
+    padding-right: 10px;
+}
+td.today {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 1.5em;
+    animation: linear scale infinite 2s;
+    background-image: url(images/white-heart-png-transparent-2.1c62f009cb802a02ca28.png);
+    background-size: cover;
+}
+.days td{
+    font-size: 18px;
+    color: black;
+}
+
+.date__img{
+    position: absolute;
+    left: 300px;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    height: 150px;
+    z-index: -1;
+    animation: rotate infinite 6s linear;
+}
+.date__description{
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.date__description-text{
+    color: #ff0080;
+    font-size: 50px;
+    font-family: Montserrat-Light;
+    margin: 60px;
+    margin-top: 40px;
+    line-height: 70px;
+}
+@media screen and (max-width: 768px) {
+    .date__img{
+        left: auto;
+        right: 0;
+    }
+    .date__description-text{
+        font-size: 30px;
+        line-height: 30px;
+        margin: 30px;
+    }
+    .date__description{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 20px;
+    }
+}
+
+.dress-code{
+    margin-top: 90px;
+    position: relative;
+}
+
+.dress-code__title{
+    width: 700px;
+}
+.dress-code__description{
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: Montserrat-Bold;
+    width: 700px;
+    line-height: 40px;
+}
+
+
+.dress-code__description-2{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Montserrat-Bold;
+    width: 700px;
+    line-height: 30px;
+    color: white;
+    text-align: right;
+    position: absolute;
+    right: 0;
+}
+.dress-code__cubes{
+    margin-top: 20px;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+.dress-code__cube{
+    height: 100px;
+    width: 100px;
+}
+
+.dress-code__gentelmen{
+    display: flex;
+    height: 1200px;
+    margin-top: 200px;
+}
+.dress-code__gentelmen-img{
+    width: 200px;
+    height: 1200px;
+    object-fit: contain;
+}
+
+.dress-code__gentelmen-photos{
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.dress-code__gentelmen-photo{
+    height: 410px;
+    margin-top: 20px;
+}
+
+@keyframes flicker {
+
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+        text-shadow:
+                0 0 4px #fff,
+                0 0 11px #fff,
+                0 0 19px #fff,
+                0 0 40px #c03bd2,
+                0 0 80px #c03bd2,
+                0 0 90px #c03bd2,
+                0 0 100px #c03bd2,
+                0 0 150px #c03bd2;
+
+    }  20%, 24%, 55% {
+           text-shadow: none;
+       }   }
+.program-evening{
+    background-color: #8b8ecb;
+}
+.program-evening__description{
+    background-color: black;
+    width: 100%;
+    height: 500px;
+}
+
+.program-evening__description_text{
+    color: #c585a9;
+    font-size: 28px;
+    font-family: Montserrat-Light;
+    margin: 60px;
+    margin-top: 140px;
+    padding-top: 80px;
+    line-height: 70px;
+}
+.program-evening__description_title{
+    color: #fff;
+    font-size: 90px;
+    font-family: Montserrat-Bold;
+    margin: 60px;
+    margin-top: 40px;
+    line-height: 70px;
+    margin-bottom: 0;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #c03bd2,
+    0 0 82px #c03bd2,
+    0 0 92px #c03bd2,
+    0 0 102px #c03bd2,
+    0 0 151px #c03bd2;;
+    animation: flicker 1.5s infinite alternate;
+}
+.program-evening__description_address{
+    color: white;
+    font-size: 30px;
+    font-family: Montserrat-Light;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.program-evening__run-text{
+    font-size: 90px;
+    font-family: UntitledJapanese, serif;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.program-evening__times{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.program-evening__time_clock{
+    text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #c03bd2,
+            0 0 82px #c03bd2,
+            0 0 92px #c03bd2;;
+    font-size: 65px;
+    color: white;
+    font-family: Montserrat-Bold;
+    margin: 0;
+}
+
+.program-evening__time{
+    display: flex;
+    margin-top: 100px;
+}
+
+.program-evening__time:last-child{
+    margin-bottom: 100px;
+}
+
+.program-evening__time_description{
+    color: black;
+    font-family: Montserrat-Bold;
+    font-size: 55px;
+    margin: 0;
+    margin-left: 50px;
+}
+@media screen and (max-width: 768px) {
+    .program-evening__description_title{
+        font-size: 40px;
+        margin: 0;
+        text-align: center;
+    }
+    .program-evening__time_clock{
+        font-size: 30px;
+
+        margin-left: 10px;
+
+    }
+    .program-evening__run-text{
+        font-size: 40px;
+    }
+
+    .program-evening__description_text{
+        color: #c585a9;
+        font-size: 24px;
+        font-family: Montserrat-Light;
+        margin: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .program-evening__time_description{
+        font-size: 25px;
+        margin: 0;
+        margin-left: 20px;
+    }
+    .program-evening__description_address{
+        font-size: 20px;
+        margin: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .program-evening__times{
+        padding: 10px
+    }
+    .program-evening__time:last-child{
+        margin-bottom: 50px;
+    }
+    .program-evening__time{
+        margin-top: 50px;
+    }
+}
+.popup__chose-color{
+    isibility: visible;
+    opacity: 1;
+    transition: visibility .5s, opacity 0.5s linear;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.popup_active{
+    display: flex;
+}
+
+.popup__content{
+    margin: 0;
+    width: 630px;
+    min-height: 530px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 36px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, .15);
+}
+
+.popup__title{
+    font-size: 30px;
+    color: black;
+    font-family: Montserrat-Bold, sans-serif;
+    margin-top: 20px;
+}
+.popup__form {
+    margin-top: 54px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.popup__input {
+    width: 100%;
+    height: 32px;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    font-size: 14px;
+    line-height: 17px;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Montserrat-Light, serif;
+}
+.popup__close{
+    background-color: transparent;
+    background-image: url("images/cross%20(1).cdbabfb7ec11ac83746c.png");
+    width: 42px;
+    height: 42px;
+    background-size: cover;
+    border: none;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    cursor: pointer;
+    transition:  linear .3s;
+
+}
+.popup__close:hover{
+    cursor: pointer;
+    transform: scale(1.4);
+}
+.popup__button{
+    width: 100%;
+    height: 50px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Montserrat-Light', serif;
+    background: #000000;
+    border-radius: 8px;
+    border: none;
+    transition: opacity linear .3s;
+}
+.popup__input-error {
+    font-size: 12px;
+    font-family: 'Montserrat-Light', serif;
+    line-height: 15px;
+    color: rgba(255, 0, 0, 1);
+    height: 30px;
+    display: block;
+}
+.popup__box{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 200px;
+    height: 30px;
+    display: block;
+    background-color: #735ca2;
+    border-radius: 5px;
+}
+@keyframes rotate {
+    from {transform: rotate(0)}
+    to {transform: rotate(360deg)}
+}
+@keyframes scale {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.3)}
+    100% {transform: scale(1)}
+}
+
+.root{
+    margin: 0;
+    padding: 0;
+    background-color: #5258fa;
+    width: 100%;
+
+}
+
+
+
+@font-face {
+    font-family: "UntitledJapanese";
+    src: url(fonts/ofont.ru_UntitledJapanese.9497676ba7a429cb27f5.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url(fonts/Montserrat-Light.34270926ef09970234f5.ttf) format("truetype");
+
+}
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url(fonts/Montserrat-Bold.0915f0a8c3367a6d05ec.ttf) format("truetype");
+
+}
+
