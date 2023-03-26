@@ -1,0 +1,26 @@
+@import url(../../blocks/header/header.css);
+@import url(../../blocks/wedding-party/wedding-party.css);
+@import url(../../blocks/date/date.css);
+@import url(../../blocks/dress-code/dress-code.css);
+@import url(../../blocks/program-evening/program-evening.css);
+@import url(../../blocks/popup/popup.css);
+
+@keyframes rotate {
+    from {transform: rotate(0)}
+    to {transform: rotate(360deg)}
+}
+@keyframes scale {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.3)}
+    100% {transform: scale(1)}
+}
+
+.root{
+    margin: 0;
+    padding: 0;
+    background-color: #5258fa;
+    width: 100%;
+
+}
+
+

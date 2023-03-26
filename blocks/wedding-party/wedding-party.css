@@ -1,0 +1,77 @@
+.wedding-party{
+    margin-top: 200px;
+}
+
+.wedding-party__title{
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    border-radius: 1000px 1000px 0 0 ;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.wedding-party__title-img{
+    margin-top: 150px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wedding-party__description{
+    background-color: black;
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.wedding-party__description-text{
+    font-family: "Montserrat-Light", serif;
+    color: white;
+    margin: 0;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.wedding-party__description-text-pink{
+    color: #ff0080;
+    font-family: "Montserrat-Bold", serif;
+}
+.wedding-party__description-img{
+    width: 600px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    .wedding-party{
+        margin-top: 100px;
+    }
+    .wedding-party__title-img{
+        width: 90%;
+    }
+    .wedding-party__title{
+        width: 100%;
+    }
+    .wedding-party__description{
+
+        width: 100%;
+    }
+    .wedding-party__description-text{
+
+        width: 90%;
+    }
+    .wedding-party__description-img{
+        width: 90%;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+
+}

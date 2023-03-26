@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "UntitledJapanese";
+    src: url("./ofont.ru_UntitledJapanese.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url("./Montserrat-Light.ttf") format("truetype");
+
+}
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("./Montserrat-Bold.ttf") format("truetype");
+
+}

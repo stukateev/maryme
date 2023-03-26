@@ -1,0 +1,105 @@
+.date__title{
+    font-family: 'Martian Mono', monospace;
+    font-size: 80px;
+    color: white;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 60px;
+}
+table {
+    margin-top: 100px;
+    clear: both;
+    border: none;
+    border-radius: 3px;
+    border-collapse: collapse;
+    color: #444;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+tbody{
+    border: none;
+}
+td {
+    border: none;
+    height: 48px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Montserrat-Light, serif;
+    width: 14.28571429%;
+    color: white;
+    font-size: 30px;
+}
+
+thead td {
+    border: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    text-align: left;
+    font-family: Montserrat-Light, serif;
+}
+td.not-current {
+    color: rgba(192, 192, 192, 0.58);
+}
+.table-month-year{
+    text-align: right;
+    color: white ;
+    padding-right: 10px;
+}
+td.today {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 1.5em;
+    animation: linear scale infinite 2s;
+    background-image: url("../../images/white-heart-png-transparent-2.png");
+    background-size: cover;
+}
+.days td{
+    font-size: 18px;
+    color: black;
+}
+
+.date__img{
+    position: absolute;
+    left: 300px;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    height: 150px;
+    z-index: -1;
+    animation: rotate infinite 6s linear;
+}
+.date__description{
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.date__description-text{
+    color: #ff0080;
+    font-size: 50px;
+    font-family: Montserrat-Light;
+    margin: 60px;
+    margin-top: 40px;
+    line-height: 70px;
+}
+@media screen and (max-width: 768px) {
+    .date__img{
+        left: auto;
+        right: 0;
+    }
+    .date__description-text{
+        font-size: 30px;
+        line-height: 30px;
+        margin: 30px;
+    }
+    .date__description{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 20px;
+    }
+}
