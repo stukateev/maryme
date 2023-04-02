@@ -18,9 +18,169 @@
 .root{
     margin: 0;
     padding: 0;
-    background-color: #5258fa;
+    background-image:  linear-gradient(rgb(161, 133, 148), rgb(255, 213, 145) );
     width: 100%;
-
 }
 
 
+.wishes{
+    padding-top: 100px;
+    background-color: #8b8ecb;
+    min-height: 500px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    position: relative;
+    background-image:  linear-gradient(rgb(161, 133, 148), rgb(255, 213, 145) );
+}
+
+.wishes__description{
+    font-family: Montserrat-Light;
+    font-size: 20px;
+    max-width: 1000px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.wishes__description_white{
+    color: white;
+}
+.wishes__img{
+    max-width: 850px;
+}
+.wishes__img_dancing{
+    max-height: 100px;
+}
+.wishes__star{
+    width: 350px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    animation: rotate infinite 6s linear;
+}
+
+.wishes__img_dancing{
+    margin: 0;
+    max-width: 700px;
+    font-family: Fagotcondoutlinec, serif;
+    font-size: 100px;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .wishes{
+        padding: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .wishes__img{
+        margin-top: 50px;
+        width: 350px;
+    }
+    .wishes__img_dancing{
+        font-size: 46px;
+    }
+    .dress-code__title{
+        font-size: 46px;
+    }
+}
+
+.footer{
+    padding-top: 250px;
+    background-image:  linear-gradient(rgb(255, 213, 145), rgb(161, 133, 148) );
+    min-height: 500px;
+}
+.footer__grave{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer__grave_head{
+    border-radius: 1000px 1000px 0 0 ;
+    width: 100%;
+    min-height: 500px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+}
+
+.footer__text{
+    color: rgb(255, 213, 145);
+    font-family: Montserrat-Light;
+    font-size: 60px;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 100px;
+    max-width: 80%;
+}
+
+.footer__img{
+    margin-top: -235px;
+    width: 500px;
+    height: 500px;
+    background-image: url("../../images/10_Point_Star_2.png") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+}
+
+.footer__img_sphere{
+    max-height: 370px;
+    width: 50%;
+    object-fit: contain;
+    margin-left: auto;
+    padding-left: 15px;
+    margin-right: auto;
+}
+
+.footer__title{
+    margin: 0;
+    margin-top: 50px;
+    font-family: Fagotcondoutlinec, serif;
+    font-size: 110px;
+    color: white;
+}
+
+.footer__button{
+    margin-top: 100px;
+    background: rgb(161, 133, 148);
+    min-height: 100px;
+    width: 800px;
+    font-size: 40px;
+    color: white;
+    font-family: Montserrat-Light;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .footer__img_sphere{
+        padding-left: 8px;
+        height: 150px;
+    }
+    .footer{
+        padding-top: 100px;}
+    .footer__img{
+        margin-top: -88px;
+        width: 200px;
+        height: 200px;
+    }
+    .footer__text{
+        margin-top: 20px;
+        font-size: 24px;
+    }
+    .footer__title{
+        font-size: 50px;
+    }
+    .footer__button{
+        width: 80%;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+}

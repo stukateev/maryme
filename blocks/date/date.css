@@ -8,9 +8,10 @@
     text-align: center;
     margin-bottom: 50px;
     margin-top: 60px;
+    font-weight: normal;
 }
 table {
-    margin-top: 100px;
+    margin-top: 50px;
     clear: both;
     border: none;
     border-radius: 3px;
@@ -80,7 +81,7 @@ td.today {
     padding-bottom: 50px;
 }
 .date__description-text{
-    color: #ff0080;
+    color: #e297ab;
     font-size: 50px;
     font-family: Montserrat-Light;
     margin: 60px;

@@ -6,26 +6,26 @@
                 0 0 4px #fff,
                 0 0 11px #fff,
                 0 0 19px #fff,
-                0 0 40px #c03bd2,
-                0 0 80px #c03bd2,
-                0 0 90px #c03bd2,
-                0 0 100px #c03bd2,
-                0 0 150px #c03bd2;
+                0 0 40px #ffffff,
+                0 0 80px #ffffff,
+                0 0 90px #ffffff,
+                0 0 100px #ffffff,
+                0 0 150px #ffffff;
 
     }  20%, 24%, 55% {
            text-shadow: none;
        }   }
 .program-evening{
-    background-color: #8b8ecb;
+
 }
 .program-evening__description{
-    background-color: black;
+
     width: 100%;
     height: 500px;
 }
 
 .program-evening__description_text{
-    color: #c585a9;
+    color: black;
     font-size: 28px;
     font-family: Montserrat-Light;
     margin: 60px;
@@ -36,7 +36,10 @@
 .program-evening__description_title{
     color: #fff;
     font-size: 90px;
-    font-family: Montserrat-Bold;
+    font-family: Fagotcondoutlinec;
+    font-weight: normal ;
+    text-align: center;
+    letter-spacing: .05em;
     margin: 60px;
     margin-top: 40px;
     line-height: 70px;
@@ -53,15 +56,15 @@
     animation: flicker 1.5s infinite alternate;
 }
 .program-evening__description_address{
-    color: white;
+    color: black;
     font-size: 30px;
     font-family: Montserrat-Light;
     margin-top: 30px;
-    margin-left: 60px;
+    text-align: center;
 }
 .program-evening__run-text{
     font-size: 90px;
-    font-family: UntitledJapanese, serif;
+    font-family: Fagotcondoutlinec, serif;
     color: white;
     width: 100%;
     margin-top: 10px;
@@ -76,13 +79,14 @@
             0 0 7px #fff,
             0 0 10px #fff,
             0 0 21px #fff,
-            0 0 42px #c03bd2,
-            0 0 82px #c03bd2,
-            0 0 92px #c03bd2;;
+            0 0 42px rgb(255, 213, 145),
+            0 0 82px rgb(255, 213, 145),
+            0 0 92px rgb(255, 213, 145);;
     font-size: 65px;
     color: white;
-    font-family: Montserrat-Bold;
+    font-family: Fagotcondoutlinec;
     margin: 0;
+
 }
 
 .program-evening__time{
@@ -95,11 +99,14 @@
 }
 
 .program-evening__time_description{
-    color: black;
-    font-family: Montserrat-Bold;
+    color: white;
+    font-family: Montserrat-Light;
     font-size: 55px;
     margin: 0;
     margin-left: 50px;
+}
+.program-evening__black{
+    background-color: black;
 }
 @media screen and (max-width: 768px) {
     .program-evening__description_title{
@@ -118,7 +125,7 @@
     }
 
     .program-evening__description_text{
-        color: #c585a9;
+
         font-size: 24px;
         font-family: Montserrat-Light;
         margin: 30px;

@@ -2,31 +2,34 @@
 .dress-code{
     margin-top: 90px;
     position: relative;
+    width: 100%;
 }
 
 .dress-code__title{
     width: 700px;
+    font-family: Fagotcondoutlinec, serif;
+    font-size: 100px;
+    color: white;
 }
 .dress-code__description{
     margin-top: 10px;
     font-size: 25px;
-    font-family: Montserrat-Bold;
+    font-family: Montserrat-Light;
     width: 700px;
     line-height: 40px;
 }
 
-
 .dress-code__description-2{
-    margin-top: 20px;
+    margin-top: 60px;
     font-size: 20px;
-    font-family: Montserrat-Bold;
-    width: 700px;
+    font-family: Montserrat-Light;
     line-height: 30px;
     color: white;
     text-align: right;
-    position: absolute;
-    right: 0;
+    margin-bottom: 0;
+    padding-left: 500px;
 }
+
 .dress-code__cubes{
     margin-top: 20px;
     width: 800px;
@@ -58,4 +61,26 @@
 .dress-code__gentelmen-photo{
     height: 410px;
     margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+    .dress-code__cube{
+        height: 40px;
+        width: 40px;
+    }
+    .dress-code__cubes{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        width: 320px;
+    }
+    .dress-code__description{
+        margin-left: 10px;
+        font-size: 20px;
+        width: 80%;
+        line-height: 28px;
+    }
+    .dress-code__description-2{
+
+        padding-left: 100px;
+    }
 }

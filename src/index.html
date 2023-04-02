@@ -18,7 +18,8 @@
 <!--    Выбрать цвета-->
 <!--</button>-->
     <header class="header">
-        <marquee  class= " header__run-text header__run-text_bottom" direction="left" behavior="alternate" scrollamount="10">WEDDING DAY &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WEDDING DAY &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WEDDING DAY &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   WEDDING DAY&nbsp;</marquee>
+
+        <marquee  class= " header__run-text " direction="left" behavior="alternate" scrollamount="10"><p style="margin: 0">WEDDING DAY &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WEDDING DAY &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WEDDING DAY &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   WEDDING DAY&nbsp;</p></marquee>
 
 
         <div class="header__logo">
@@ -27,7 +28,7 @@
             <h2 class="header_v">ВЛАДИСЛАВ</h2>
             <h3 class="header__date">13 / &nbsp;05 // &nbsp; &nbsp; 2023</h3>
         </div>
-        <marquee  class= " header__run-text header__run-text_bottom" direction="right" behavior="alternate" scrollamount="10">ДЕНЬ СВАДЬБЫ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ДЕНЬ СВАДЬБЫ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ДЕНЬ СВАДЬБЫ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ДЕНЬ СВАДЬБЫ</marquee>
+        <marquee  class= " header__run-text header__run-text_bottom" direction="right" behavior="alternate" scrollamount="10"><p style="margin: 0">ДЕНЬ СВАДЬБЫ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ДЕНЬ СВАДЬБЫ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ДЕНЬ СВАДЬБЫ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ДЕНЬ СВАДЬБЫ</p></marquee>
     </header>
     <section class="wedding-party">
         <div class="wedding-party__title">
@@ -37,14 +38,13 @@
             <p class="wedding-party__description-text wedding-party__description-text-pink">УВАЖАЕМЫЕ, ЛЮБИМЫЕ  <br />И САМЫЕ ДОРОГИЕ!</p>
             <p class="wedding-party__description-text  wedding-party__description-text-white">В связи со сложившимися обстоятельствами, а именно: бесконечной взаимной любовью и усталостью постоянно отвечать на вопрос:<br />-Да когда уже?!<br />-Да скоро уже!</p>
             <p class="wedding-party__description-text wedding-party__description-text-white">… мы решили пожениться <br />и нам кажется -</p>
-            <img class="wedding-party__description-img" src="<%=require('../images/imasddsad.png')%>">
+            <h3  style="font-size: 40px" class="wedding-party__description-text-title wedding-party__description-text-pink" > ЭТО БУДЕТ НЕЗАБЫВАЕМО! </h3>
         </div>
     </section>
     <section class="date">
         <h3 class="date__title">13 мая 2023</h3>
         <img class="date__img" src="<%=require('../images/10_Point_Star_1.png')%>">
         <div class="date__calendar-wrapper">
-
             <div id="divCal"></div>
         </div>
         <div class="date__description">
@@ -53,54 +53,70 @@
             </p>
         </div>
     </section>
-<!--    <section class="dress-code">-->
-<!--        <img class="dress-code__title" src="<%=require('../images/DRESS_CODE_copy.png')%>">-->
-<!--        <p class="dress-code__description">МЫ БУДЕМ РАДЫ, ЕСЛИ ВЫ ПОДДЕРЖИТЕ ЦВЕТОВУЮ ГАММУ ЭТОГО ВЕЧЕРА И ПОДБЕРЕТЕ ОБРАЗ В ДАННЫХ ЦВЕТАХ:</p>-->
-<!--        <div class="dress-code__cubes">-->
-<!--            <div class="dress-code__cube" style="background: black"></div>-->
-<!--            <div class="dress-code__cube" style="background: #735ca2"></div>-->
-<!--            <div class="dress-code__cube" style="background: #c0a3db"></div>-->
-<!--            <div class="dress-code__cube" style="background: #ff0080"></div>-->
-<!--            <div class="dress-code__cube" style="background: #f0ccd0"></div>-->
-<!--            <div class="dress-code__cube" style="background: #eadcd3"></div>-->
-<!--        </div>-->
-<!--        <p class="dress-code__description-2" >А ЕСЛИ НЕ ПОДБЕРЕТЕ, ТО ДЛЯ ВАС НАША СВАДЬБА ПРОХОДИТ ПО АДРЕСУ - СЕЛО БУРАНГУЛОВО, УЛ.КИЗИЛЬСКАЯ 1, КАФЕ «КАРЛУГАС».-->
-<!--        </p>-->
-<!--        <div class="dress-code__gentelmen">-->
-<!--            <img src="<%=require('../images/GENTELMEN_copy.png')%>" class="dress-code__gentelmen-img">-->
-<!--            <div class="dress-code__gentelmen-photos">-->
-<!--&lt;!&ndash;                <img class="dress-code__gentelmen-photo" src="../images/IMG_5817.jfif">&ndash;&gt;-->
-<!--&lt;!&ndash;                <img class="dress-code__gentelmen-photo" src="../images/IMG_5806.jfif">&ndash;&gt;-->
-<!--&lt;!&ndash;                <img class="dress-code__gentelmen-photo" src="../images/IMG_5807.jfif">&ndash;&gt;-->
-<!--&lt;!&ndash;                <img class="dress-code__gentelmen-photo" src="../images/IMG_5808.jfif">&ndash;&gt;-->
-<!--&lt;!&ndash;                <img class="dress-code__gentelmen-photo" src="../images/IMG_5810.jfif">&ndash;&gt;-->
-<!--&lt;!&ndash;                <img class="dress-code__gentelmen-photo" src="../images/IMG_5814.jfif">&ndash;&gt;-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
+
 <section class="program-evening">
     <div class="program-evening__description">
         <h3 class="program-evening__description_text">ВЫЕЗДНАЯ РЕГИСТРАЦИЯ И ПОСЛЕДУЮЩИЙ ПРЕКРАСНЫЙ ВЕЧЕР БУДУТ ПРОХОДИТЬ
             В:</h3>
-        <h4 class="program-evening__description_title" >Академической галерее</h4>
+        <h4 class="program-evening__description_title" >АКАДЕМИЧЕСКОЙ ГАЛЕРЕЕ</h4>
         <p class="program-evening__description_address">// г. Пятигорск, ул. Красноармейская 30</p>
     </div>
-    <marquee  class= " program-evening__run-text" direction="left" behavior="alternate" scrollamount="10">ПРОГРАММА ВЕЧЕРА &nbsp;&nbsp;&nbsp;&nbsp; ПРОГРАММА ВЕЧЕРА &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ПРОГРАММА ВЕЧЕРА &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ПРОГРАММА ВЕЧЕРА&nbsp;</marquee>
-        <div class="program-evening__times">
-            <div class="program-evening__time">
-                <h3 class="program-evening__time_clock">16:00</h3>
-                <p class="program-evening__time_description">СБОР ГОСТЕЙ.</p>
+    <div class="program-evening__black">
+        <marquee  class= " program-evening__run-text" direction="left" behavior="alternate" scrollamount="10"><p style="margin: 0">ПРОГРАММА ВЕЧЕРА &nbsp;&nbsp;&nbsp;&nbsp; ПРОГРАММА ВЕЧЕРА &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ПРОГРАММА ВЕЧЕРА &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ПРОГРАММА ВЕЧЕРА&nbsp;</p></marquee>
+            <div class="program-evening__times">
+                <div class="program-evening__time">
+                    <h3 class="program-evening__time_clock">16:00</h3>
+                    <p class="program-evening__time_description">СБОР ГОСТЕЙ.</p>
+                </div>
+                <div class="program-evening__time ">
+                    <h3 class="program-evening__time_clock">17:00</h3>
+                    <p class="program-evening__time_description">ПРАЗДНИЧНЫЙ БАНКЕТ.</p>
+                </div>
             </div>
-            <div class="program-evening__time ">
-                <h3 class="program-evening__time_clock">17:00</h3>
-                <p class="program-evening__time_description">ПРАЗДНИЧНЫЙ БАНКЕТ.</p>
-            </div>
-        </div>
-    <marquee  class= " program-evening__run-text" direction="right" behavior="alternate" scrollamount="10">ПРОГРАММА ВЕЧЕРА &nbsp;&nbsp;&nbsp;&nbsp; ПРОГРАММА ВЕЧЕРА &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ПРОГРАММА ВЕЧЕРА &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ПРОГРАММА ВЕЧЕРА&nbsp;</marquee>
-</section>
-<section class="">
+        <marquee  class= " program-evening__run-text" direction="right" behavior="alternate" scrollamount="10"><p style="margin: 0">ПРОГРАММА ВЕЧЕРА &nbsp;&nbsp;&nbsp;&nbsp; ПРОГРАММА ВЕЧЕРА &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ПРОГРАММА ВЕЧЕРА &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ПРОГРАММА ВЕЧЕРА&nbsp;</p></marquee>
+    </div>
 
 </section>
+<section class="wishes">
+    <img class="wishes__img" src="<%=require('../images/pozhelanie.png')%>">
+    <h3 class="wishes__img_dancing" >ТАНЦУЮТ ВСЕ!</h3>
+    <p class="wishes__description">НЕ ЗАБЫВАЙТЕ, ЧТО НАСТРОЕНИЕ ПРАЗДНИКА СОЗДАЁТЕ ИМЕННО ВЫ, НАШИ ДОРОГИЕ ГОСТИ, ПОЭТОМУ В ОБЯЗАТЕЛЬНОМ ПОРЯДКЕ ВСЕ НЕПЬЮЩИЕ - ПЬЮТ, НЕ ТАНЦУЮЩИЕ - ТАНЦУЮТ, БЕЗГОЛОСЫЕ - ПОЮТ.
+    </p>
+<p class="wishes__description wishes__description_white">ОСЛУШАВШИХСЯ ОТПРАВЛЯЕМ ПО УЖЕ ИЗВЕСТНОМУ АДРЕСУ - СЕЛО БУРАНГУЛОВО, УЛ.КИЗИЛЬСКАЯ 1, КАФЕ «КАРЛУГАС».</p>
+    <h3 style="margin-top: 50px" class="wishes__img wishes__img_dancing" >ХЭШТЕГ!</h3>
+    <p class="wishes__description">ДЛЯ ПУБЛИКАЦИИ ФОТОГРАФИЙ С НАШЕЙ СВАДЬБЫ ВОСПОЛЬЗУЙТЕСЬ ХЭШТЕГОМ <b>#ВЭДДИНГКЭТИНГВЛЭДИНГ</b> , ЭТО ПОЗВОЛИТ НАМ НАСЛАДИТЬСЯ ФОТОГРАФИЯМИ.</p>
+    <p class="wishes__description wishes__description_white">ПРОСЬБА С ТЕЛЕФОНОВ ”RETINA”, “ALCATEL”, “HTC” И ”PRESTIGIO” ФОТО НЕ ВЫКЛАДЫВАТЬ, МЫ НА НИХ НЕ ПОЛУЧАЕМСЯ.</p>
+
+    <section class="dress-code">
+<!--        <img class="dress-code__title" src="<%=require('../images/DRESS_CODE_copy.png')%>">-->
+        <h3 class="dress-code__title" >ДРЕСС КОД!</h3>
+
+        <p class="dress-code__description">МЫ БУДЕМ РАДЫ, ЕСЛИ ВЫ ПОДДЕРЖИТЕ ЦВЕТОВУЮ ГАММУ ЭТОГО ВЕЧЕРА И ПОДБЕРЕТЕ ОБРАЗ В ДАННЫХ ЦВЕТАХ:</p>
+        <div class="dress-code__cubes">
+            <div class="dress-code__cube" style="background: black"></div>
+            <div class="dress-code__cube" style="background: #c6c09c"></div>
+            <div class="dress-code__cube" style="background: #f5f1e8"></div>
+            <div class="dress-code__cube" style="background: #836054"></div>
+            <div class="dress-code__cube" style="background: #c99584"></div>
+            <div class="dress-code__cube" style="background: #ac9b91"></div>
+        </div>
+        <p class="dress-code__description-2" >А ЕСЛИ НЕ ПОДБЕРЕТЕ, ТО ДЛЯ ВАС НАША СВАДЬБА ПРОХОДИТ ПО АДРЕСУ - <b >ХУТОР ДАДЫМОВКА, УЛ. ЛУГОВАЯ, 3, "ТАВЕРНА РУЛЬКА".</b>
+        </p>
+
+    </section>
+</section>
+<footer class="footer">
+
+    <div class="footer__grave">
+        <div class="footer__grave_head">
+            <div class="footer__img" > <img class="footer__img_sphere" src="<%=require('../images/pngwing.com.png')%>"></div>
+            <p class="footer__text">ЭТОТ ДЕНЬ ДЛЯ НАС ДЕЙСТВИТЕЛЬНО ОСОБЕННЫЙ, КАК И ВСЕ, КТО РАЗДЕЛЯЕТ ЕГО С НАМИ, ПОЭТОМУ С НЕТЕРПЕНИЕМ ЖДЁМ ВАС И ВАС И ВАС ТОЖЕ!</p>
+            <p class="footer__title">ВЛАД И КЭТИ</p>
+            <button class="footer__button">ПОДТВЕРДИТЬ ПРИСУТСТВИЕ</button>
+        </div>
+    </div>
+</footer>
+
     <script src="pages/index.js"></script>
     <script src="../Calendar.js"></script>
 </body>

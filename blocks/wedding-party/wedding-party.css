@@ -41,13 +41,18 @@
 }
 
 .wedding-party__description-text-pink{
-    color: #ff0080;
+    color: #e297ab;
     font-family: "Montserrat-Bold", serif;
 }
 .wedding-party__description-img{
     width: 600px;
     margin-top: 30px;
     margin-bottom: 60px;
+}
+.wedding-party__description-text-title{
+    width: 100%;
+    text-align: center;
+    font-family: Montserrat-Light;
 }
 
 @media screen and (max-width: 768px) {

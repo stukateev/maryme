@@ -14,3 +14,10 @@
     src: url("./Montserrat-Bold.ttf") format("truetype");
 
 }
+
+@font-face {
+    font-family: "Fagotcondoutlinec";
+    src: url("./fagotcondoutlinec.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
