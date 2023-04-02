@@ -1,3 +1,8 @@
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
 h2{
     font-family: Fagotcondoutlinec, serif;
     font-size: 130px;
@@ -48,15 +53,6 @@ h2{
     margin-top: 200px;
 }
 
-.header__run-text{
-    font-size: 70px;
-    font-family: Montserrat-Light;
-    color: white;
-    width: 100%;
-}
-.header__run-text_bottom{
-    margin-top: 100px;
-}
 
 .header__chose-color{
     cursor: pointer;
@@ -79,20 +75,43 @@ h2{
     box-shadow: #735ca2 12px 12px 10px;
 }
 
+.header__run-text {
+    width: 100%;
+    font-size: 70px;
+    font-family: Montserrat-Light;
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.header__run-text_bottom{
+    margin-top: 100px;
+}
+.header__run-text p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+
+
 @media screen and (max-width: 768px) {
     h2{
         text-align: center;
-        font-size: 60px;
+        font-size: 56px;
+        font-weight: bold;
     }
     .header__logo{
-        height: 300px;
-        padding-top: 50px;
+        height: 200px;
+        padding-top: 0;
     }
     .header__img{
-        height: 300px;
+        height: 220px;
     }
     .header_e{
         margin-top: 90px;
+        padding-top: 40px;
     }
     .header__date{
         margin-top: 220px;
@@ -101,6 +120,12 @@ h2{
     }
     .header__run-text{
         font-size: 60px;
+    }
+    .header__run-text_bottom{
+        margin-top: 50px;
+    }
+    .header__run-text p {
+        animation: marquee 30s linear infinite;
     }
 }
 
@@ -184,7 +209,11 @@ h2{
         margin-top: 30px;
         margin-bottom: 60px;
     }
+    .wedding-party__description-text-title{
+        margin-left: 10px;
+        margin-right: 10px;
 
+    }
 }
 
 .date__title{
@@ -278,6 +307,9 @@ td.today {
     line-height: 70px;
 }
 @media screen and (max-width: 768px) {
+    .date__title{
+        font-size: 50px;
+    }
     .date__img{
         left: auto;
         right: 0;
@@ -291,6 +323,18 @@ td.today {
         padding-top: 10px;
         padding-bottom: 10px;
         margin: 20px;
+    }
+    table {
+        width: 290px;
+    }
+    .date__img{
+        position: absolute;
+        left: 200px;
+        right: 0;
+        margin-right: auto;
+        margin-left: auto;
+        height: 130px;
+
     }
 }
 
@@ -358,6 +402,12 @@ td.today {
     margin-top: 20px;
 }
 @media screen and (max-width: 768px) {
+    .dress-code__title{
+        width: 100%;
+        font-family: Fagotcondoutlinec, serif;
+        font-size: 100px;
+        color: white;
+    }
     .dress-code__cube{
         height: 40px;
         width: 40px;
@@ -444,12 +494,22 @@ td.today {
     margin-top: 30px;
     text-align: center;
 }
-.program-evening__run-text{
+
+.program-evening__run-text {
     font-size: 90px;
     font-family: Fagotcondoutlinec, serif;
     color: white;
     width: 100%;
     margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.program-evening__run-text p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
 }
 
 .program-evening__times{
@@ -468,7 +528,6 @@ td.today {
     color: white;
     font-family: Fagotcondoutlinec;
     margin: 0;
-
 }
 
 .program-evening__time{
@@ -522,6 +581,8 @@ td.today {
     .program-evening__description_address{
         font-size: 20px;
         margin: 0;
+        margin-left: 10px;
+        margin-right: 10px;
         text-align: center;
         margin-top: 20px;
     }
@@ -534,6 +595,7 @@ td.today {
     .program-evening__time{
         margin-top: 50px;
     }
+
 }
 .popup__chose-color{
     isibility: visible;
