@@ -62,12 +62,22 @@
     margin-top: 30px;
     text-align: center;
 }
-.program-evening__run-text{
+
+.program-evening__run-text {
     font-size: 90px;
     font-family: Fagotcondoutlinec, serif;
     color: white;
     width: 100%;
     margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.program-evening__run-text p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
 }
 
 .program-evening__times{
@@ -86,7 +96,6 @@
     color: white;
     font-family: Fagotcondoutlinec;
     margin: 0;
-
 }
 
 .program-evening__time{
@@ -140,6 +149,8 @@
     .program-evening__description_address{
         font-size: 20px;
         margin: 0;
+        margin-left: 10px;
+        margin-right: 10px;
         text-align: center;
         margin-top: 20px;
     }
@@ -152,4 +163,5 @@
     .program-evening__time{
         margin-top: 50px;
     }
+
 }

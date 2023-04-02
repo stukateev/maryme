@@ -63,6 +63,12 @@
     margin-top: 20px;
 }
 @media screen and (max-width: 768px) {
+    .dress-code__title{
+        width: 100%;
+        font-family: Fagotcondoutlinec, serif;
+        font-size: 100px;
+        color: white;
+    }
     .dress-code__cube{
         height: 40px;
         width: 40px;

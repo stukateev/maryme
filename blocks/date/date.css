@@ -89,6 +89,9 @@ td.today {
     line-height: 70px;
 }
 @media screen and (max-width: 768px) {
+    .date__title{
+        font-size: 50px;
+    }
     .date__img{
         left: auto;
         right: 0;
@@ -102,5 +105,17 @@ td.today {
         padding-top: 10px;
         padding-bottom: 10px;
         margin: 20px;
+    }
+    table {
+        width: 290px;
+    }
+    .date__img{
+        position: absolute;
+        left: 200px;
+        right: 0;
+        margin-right: auto;
+        margin-left: auto;
+        height: 130px;
+
     }
 }
