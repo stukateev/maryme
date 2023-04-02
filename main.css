@@ -1,7 +1,10 @@
 h2{
-    font-family: UntitledJapanese, serif;
+    font-family: Fagotcondoutlinec, serif;
     font-size: 130px;
     color: white;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-weight: bold;
 }
 .header{
 
@@ -42,7 +45,7 @@ h2{
     font-weight: lighter;
     text-align: right;
     margin: 0;
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
 .header__run-text{
@@ -52,7 +55,7 @@ h2{
     width: 100%;
 }
 .header__run-text_bottom{
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .header__chose-color{
@@ -144,13 +147,18 @@ h2{
 }
 
 .wedding-party__description-text-pink{
-    color: #ff0080;
+    color: #e297ab;
     font-family: "Montserrat-Bold", serif;
 }
 .wedding-party__description-img{
     width: 600px;
     margin-top: 30px;
     margin-bottom: 60px;
+}
+.wedding-party__description-text-title{
+    width: 100%;
+    text-align: center;
+    font-family: Montserrat-Light;
 }
 
 @media screen and (max-width: 768px) {
@@ -189,9 +197,10 @@ h2{
     text-align: center;
     margin-bottom: 50px;
     margin-top: 60px;
+    font-weight: normal;
 }
 table {
-    margin-top: 100px;
+    margin-top: 50px;
     clear: both;
     border: none;
     border-radius: 3px;
@@ -261,7 +270,7 @@ td.today {
     padding-bottom: 50px;
 }
 .date__description-text{
-    color: #ff0080;
+    color: #e297ab;
     font-size: 50px;
     font-family: Montserrat-Light;
     margin: 60px;
@@ -288,31 +297,34 @@ td.today {
 .dress-code{
     margin-top: 90px;
     position: relative;
+    width: 100%;
 }
 
 .dress-code__title{
     width: 700px;
+    font-family: Fagotcondoutlinec, serif;
+    font-size: 100px;
+    color: white;
 }
 .dress-code__description{
     margin-top: 10px;
     font-size: 25px;
-    font-family: Montserrat-Bold;
+    font-family: Montserrat-Light;
     width: 700px;
     line-height: 40px;
 }
 
-
 .dress-code__description-2{
-    margin-top: 20px;
+    margin-top: 60px;
     font-size: 20px;
-    font-family: Montserrat-Bold;
-    width: 700px;
+    font-family: Montserrat-Light;
     line-height: 30px;
     color: white;
     text-align: right;
-    position: absolute;
-    right: 0;
+    margin-bottom: 0;
+    padding-left: 500px;
 }
+
 .dress-code__cubes{
     margin-top: 20px;
     width: 800px;
@@ -345,6 +357,28 @@ td.today {
     height: 410px;
     margin-top: 20px;
 }
+@media screen and (max-width: 768px) {
+    .dress-code__cube{
+        height: 40px;
+        width: 40px;
+    }
+    .dress-code__cubes{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        width: 320px;
+    }
+    .dress-code__description{
+        margin-left: 10px;
+        font-size: 20px;
+        width: 80%;
+        line-height: 28px;
+    }
+    .dress-code__description-2{
+
+        padding-left: 100px;
+    }
+}
 
 @keyframes flicker {
 
@@ -354,26 +388,26 @@ td.today {
                 0 0 4px #fff,
                 0 0 11px #fff,
                 0 0 19px #fff,
-                0 0 40px #c03bd2,
-                0 0 80px #c03bd2,
-                0 0 90px #c03bd2,
-                0 0 100px #c03bd2,
-                0 0 150px #c03bd2;
+                0 0 40px #ffffff,
+                0 0 80px #ffffff,
+                0 0 90px #ffffff,
+                0 0 100px #ffffff,
+                0 0 150px #ffffff;
 
     }  20%, 24%, 55% {
            text-shadow: none;
        }   }
 .program-evening{
-    background-color: #8b8ecb;
+
 }
 .program-evening__description{
-    background-color: black;
+
     width: 100%;
     height: 500px;
 }
 
 .program-evening__description_text{
-    color: #c585a9;
+    color: black;
     font-size: 28px;
     font-family: Montserrat-Light;
     margin: 60px;
@@ -384,7 +418,10 @@ td.today {
 .program-evening__description_title{
     color: #fff;
     font-size: 90px;
-    font-family: Montserrat-Bold;
+    font-family: Fagotcondoutlinec;
+    font-weight: normal ;
+    text-align: center;
+    letter-spacing: .05em;
     margin: 60px;
     margin-top: 40px;
     line-height: 70px;
@@ -401,15 +438,15 @@ td.today {
     animation: flicker 1.5s infinite alternate;
 }
 .program-evening__description_address{
-    color: white;
+    color: black;
     font-size: 30px;
     font-family: Montserrat-Light;
     margin-top: 30px;
-    margin-left: 60px;
+    text-align: center;
 }
 .program-evening__run-text{
     font-size: 90px;
-    font-family: UntitledJapanese, serif;
+    font-family: Fagotcondoutlinec, serif;
     color: white;
     width: 100%;
     margin-top: 10px;
@@ -424,13 +461,14 @@ td.today {
             0 0 7px #fff,
             0 0 10px #fff,
             0 0 21px #fff,
-            0 0 42px #c03bd2,
-            0 0 82px #c03bd2,
-            0 0 92px #c03bd2;;
+            0 0 42px rgb(255, 213, 145),
+            0 0 82px rgb(255, 213, 145),
+            0 0 92px rgb(255, 213, 145);;
     font-size: 65px;
     color: white;
-    font-family: Montserrat-Bold;
+    font-family: Fagotcondoutlinec;
     margin: 0;
+
 }
 
 .program-evening__time{
@@ -443,11 +481,14 @@ td.today {
 }
 
 .program-evening__time_description{
-    color: black;
-    font-family: Montserrat-Bold;
+    color: white;
+    font-family: Montserrat-Light;
     font-size: 55px;
     margin: 0;
     margin-left: 50px;
+}
+.program-evening__black{
+    background-color: black;
 }
 @media screen and (max-width: 768px) {
     .program-evening__description_title{
@@ -466,7 +507,7 @@ td.today {
     }
 
     .program-evening__description_text{
-        color: #c585a9;
+
         font-size: 24px;
         font-family: Montserrat-Light;
         margin: 30px;
@@ -610,13 +651,172 @@ td.today {
 .root{
     margin: 0;
     padding: 0;
-    background-color: #5258fa;
+    background-image:  linear-gradient(rgb(161, 133, 148), rgb(255, 213, 145) );
     width: 100%;
-
 }
 
 
+.wishes{
+    padding-top: 100px;
+    background-color: #8b8ecb;
+    min-height: 500px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    position: relative;
+    background-image:  linear-gradient(rgb(161, 133, 148), rgb(255, 213, 145) );
+}
 
+.wishes__description{
+    font-family: Montserrat-Light;
+    font-size: 20px;
+    max-width: 1000px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.wishes__description_white{
+    color: white;
+}
+.wishes__img{
+    max-width: 850px;
+}
+.wishes__img_dancing{
+    max-height: 100px;
+}
+.wishes__star{
+    width: 350px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    animation: rotate infinite 6s linear;
+}
+
+.wishes__img_dancing{
+    margin: 0;
+    max-width: 700px;
+    font-family: Fagotcondoutlinec, serif;
+    font-size: 100px;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .wishes{
+        padding: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .wishes__img{
+        margin-top: 50px;
+        width: 350px;
+    }
+    .wishes__img_dancing{
+        font-size: 46px;
+    }
+    .dress-code__title{
+        font-size: 46px;
+    }
+}
+
+.footer{
+    padding-top: 250px;
+    background-image:  linear-gradient(rgb(255, 213, 145), rgb(161, 133, 148) );
+    min-height: 500px;
+}
+.footer__grave{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer__grave_head{
+    border-radius: 1000px 1000px 0 0 ;
+    width: 100%;
+    min-height: 500px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+}
+
+.footer__text{
+    color: rgb(255, 213, 145);
+    font-family: Montserrat-Light;
+    font-size: 60px;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 100px;
+    max-width: 80%;
+}
+
+.footer__img{
+    margin-top: -235px;
+    width: 500px;
+    height: 500px;
+    background-image: url(images/10_Point_Star_2.b925d8ed0d6ef9563849.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+}
+
+.footer__img_sphere{
+    max-height: 370px;
+    width: 50%;
+    object-fit: contain;
+    margin-left: auto;
+    padding-left: 15px;
+    margin-right: auto;
+}
+
+.footer__title{
+    margin: 0;
+    margin-top: 50px;
+    font-family: Fagotcondoutlinec, serif;
+    font-size: 110px;
+    color: white;
+}
+
+.footer__button{
+    margin-top: 100px;
+    background: rgb(161, 133, 148);
+    min-height: 100px;
+    width: 800px;
+    font-size: 40px;
+    color: white;
+    font-family: Montserrat-Light;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .footer__img_sphere{
+        padding-left: 8px;
+        height: 150px;
+    }
+    .footer{
+        padding-top: 100px;}
+    .footer__img{
+        margin-top: -88px;
+        width: 200px;
+        height: 200px;
+    }
+    .footer__text{
+        margin-top: 20px;
+        font-size: 24px;
+    }
+    .footer__title{
+        font-size: 50px;
+    }
+    .footer__button{
+        width: 80%;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+}
 @font-face {
     font-family: "UntitledJapanese";
     src: url(fonts/ofont.ru_UntitledJapanese.9497676ba7a429cb27f5.ttf) format("truetype");
@@ -634,3 +834,9 @@ td.today {
 
 }
 
+@font-face {
+    font-family: "Fagotcondoutlinec";
+    src: url(fonts/fagotcondoutlinec.912accba978d42e75b8d.otf) format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
