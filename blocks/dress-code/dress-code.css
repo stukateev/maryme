@@ -82,11 +82,19 @@
     .dress-code__description{
         margin-left: 10px;
         font-size: 20px;
-        width: 80%;
+        width: 90%;
         line-height: 28px;
     }
     .dress-code__description-2{
+        width: 90%;
+        padding-left: 0;
+    }
+}
 
-        padding-left: 100px;
+@media screen and (max-width: 360px) {
+
+    .dress-code__cubes{
+
+        width: 290px;
     }
 }

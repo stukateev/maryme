@@ -58,7 +58,9 @@ td.today {
     font-size: 1.5em;
     animation: linear scale infinite 2s;
     background-image: url("../../images/white-heart-png-transparent-2.png");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .days td{
     font-size: 18px;
@@ -118,4 +120,5 @@ td.today {
         height: 130px;
 
     }
+
 }
