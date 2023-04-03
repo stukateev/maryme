@@ -32,18 +32,24 @@ h2{
     margin-right: auto;
     padding-top: 20px;
 }
-
-.header__img{
+.header__img_div{
     position: absolute;
     left: 0;
     right: 0;
     margin-right: auto;
     margin-left: auto;
-    height: 350px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.header__img{
+
+
     z-index: -1;
     animation: rotate infinite 6s linear;
-
 }
+
 .header__date{
     font-size: 50px;
     font-family: Arial;
@@ -276,7 +282,9 @@ td.today {
     font-size: 1.5em;
     animation: linear scale infinite 2s;
     background-image: url(images/white-heart-png-transparent-2.1c62f009cb802a02ca28.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .days td{
     font-size: 18px;
@@ -336,6 +344,7 @@ td.today {
         height: 130px;
 
     }
+
 }
 
 .dress-code{
@@ -421,15 +430,22 @@ td.today {
     .dress-code__description{
         margin-left: 10px;
         font-size: 20px;
-        width: 80%;
+        width: 90%;
         line-height: 28px;
     }
     .dress-code__description-2{
-
-        padding-left: 100px;
+        width: 90%;
+        padding-left: 0;
     }
 }
 
+@media screen and (max-width: 360px) {
+
+    .dress-code__cubes{
+
+        width: 290px;
+    }
+}
 @keyframes flicker {
 
     0%, 18%, 22%, 25%, 53%, 57%, 100% {
@@ -554,6 +570,7 @@ td.today {
         font-size: 40px;
         margin: 0;
         text-align: center;
+        font-weight: bold;
     }
     .program-evening__time_clock{
         font-size: 30px;
@@ -781,6 +798,11 @@ td.today {
         font-size: 46px;
     }
 }
+@media screen and (max-width: 360px) {
+    .wishes__img{
+        width: 300px;
+    }
+}
 
 .footer{
     padding-top: 250px;
@@ -853,6 +875,7 @@ td.today {
     font-family: Montserrat-Light;
     margin-bottom: 50px;
     cursor: pointer;
+    border: none;
 }
 @media screen and (max-width: 768px) {
     .footer__img_sphere{
@@ -872,10 +895,13 @@ td.today {
     }
     .footer__title{
         font-size: 50px;
+        margin-top: 30px;
+        font-weight: bold;
     }
     .footer__button{
+        margin-top: 50px;
         width: 80%;
-        font-size: 30px;
+        font-size: 26px;
         margin-bottom: 10px;
     }
 }
