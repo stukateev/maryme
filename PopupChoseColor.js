@@ -1,10 +1,6 @@
 import { Popup } from "./Popup.js";
+import {buttonApply}from "./constants"
 const https = require('https-browserify');
-
-
-// Импортируем модуль для отправки HTTPS запросов
-
-
 
 
 // Задаем ID и API-ключ телеграм бота
@@ -55,8 +51,6 @@ export default class PopupChoseColor extends Popup {
         console.log(this._formValues)
         let message = ` Оп, ответили \n\n Гости: ${this._formValues.guest}\n\n Наличие: ${availabe}\n\n Будут пить: ${this._alcohol}\n\n `;
 
-
-
         // Формируем URL для отправки сообщения
         const url = `https://api.telegram.org/bot${botApiKey}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
         // Отправляем HTTPS запрос на указанный URL
@@ -65,8 +59,7 @@ export default class PopupChoseColor extends Popup {
         }).on('error', (err) => {
             console.error('Ошибка отправки сообщения:', err);
         });
-
-
+        buttonApply.remove()
         return this._formValues;
     };
 

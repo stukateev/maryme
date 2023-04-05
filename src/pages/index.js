@@ -26,10 +26,8 @@ const popupChoseColor = new PopupChoseColor({
     }
 }, '.popup__chose-color')
 
-
 buttonApply.addEventListener('click', () => {
     popupChoseColor.open();
-
     // popupEditValidation.resetValidation()
 });
 
