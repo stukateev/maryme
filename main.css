@@ -446,26 +446,7 @@ td.today {
         width: 290px;
     }
 }
-@keyframes flicker {
 
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-
-        text-shadow:
-                0 0 4px #fff,
-                0 0 11px #fff,
-                0 0 19px #fff,
-                0 0 40px #ffffff,
-                0 0 80px #ffffff,
-                0 0 90px #ffffff,
-                0 0 100px #ffffff,
-                0 0 150px #ffffff;
-
-    }  20%, 24%, 55% {
-           text-shadow: none;
-       }   }
-.program-evening{
-
-}
 .program-evening__description{
 
     width: 100%;
@@ -493,14 +474,14 @@ td.today {
     line-height: 70px;
     margin-bottom: 0;
     text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px #c03bd2,
-    0 0 82px #c03bd2,
-    0 0 92px #c03bd2,
-    0 0 102px #c03bd2,
-    0 0 151px #c03bd2;;
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #ffffff,
+            0 0 80px #ffffff,
+            0 0 90px #ffffff,
+            0 0 100px #ffffff,
+            0 0 150px #ffffff;;
     animation: flicker 1.5s infinite alternate;
 }
 .program-evening__description_address{
@@ -583,7 +564,6 @@ td.today {
     }
 
     .program-evening__description_text{
-
         font-size: 24px;
         font-family: Montserrat-Light;
         margin: 30px;
@@ -615,35 +595,41 @@ td.today {
 
 }
 .popup__chose-color{
-    isibility: visible;
-    opacity: 1;
-    transition: visibility .5s, opacity 0.5s linear;
+    visibility: hidden;
+    opacity: 0;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .9);
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1;
+    transition: visibility .5s, opacity 0.5s linear .1s;
 }
 
 .popup_active{
-    display: flex;
+    visibility: visible;
+    opacity: 1;
 }
 
 .popup__content{
     margin: 0;
     width: 630px;
-    min-height: 530px;
+    min-height: 750px;
     background-color: #fff;
     border-radius: 10px;
     position: relative;
     box-sizing: border-box;
     padding: 0 36px;
     box-shadow: 0 0 25px rgba(255, 255, 255, .15);
+}
+.popup__text{
+    font-size: 24px;
+    font-family: Montserrat-Light, sans-serif;
+    margin-bottom: 10px;
 }
 
 .popup__title{
@@ -709,13 +695,83 @@ td.today {
     display: block;
 }
 .popup__box{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 200px;
-    height: 30px;
-    display: block;
-    background-color: #735ca2;
-    border-radius: 5px;
+     display: flex;
+     align-items: center;
+    height:30px ;
+    margin-top: 15px;
+}
+.popup__input_type_checkbox{
+    height:30px ;
+    width: 30px;
+    margin-right: 20px;
+}
+.popup__box-text{
+    font-size: 16px;
+    font-family: 'Montserrat-Light', serif;
+}
+.popup__box_check-tab{
+    height:30px ;
+    width: 30px;
+    margin-right: 20px;
+}
+.popup__box_no{
+
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 768px) {
+    .popup__content{
+        margin: 0;
+        width: 90%;
+        min-height: 350px;
+        background-color: #fff;
+        border-radius: 10px;
+
+        padding: 0 12px;
+    }
+    .popup__title{
+        font-size: 22px;
+
+        margin-top: 30px;
+    }
+    .popup__box_check-tab{
+        height: 25px;
+        width: 25px;
+        margin-top: 5px;
+    }
+    .popup__box-text{
+        font-size: 14px;
+
+    }
+    .popup__button{
+        width: 100%;
+        height: 40px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 20px;
+
+        border-radius: 8px;
+    }
+    .popup__text{
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+    .popup__form {
+        margin-top: 34px;
+    }
+    .popup__close{
+        top: 0;
+        right: 0;
+    }
+    .popup__input_type_checkbox{
+        height: 25px;
+        width: 25px;
+        margin-top: 5px;
+    }
+    .popup__box{
+        height: 25px;
+        margin-top: 10px;
+    }
 }
 @keyframes rotate {
     from {transform: rotate(0)}
@@ -752,7 +808,7 @@ td.today {
     max-width: 1000px;
     margin-top: 50px;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
 .wishes__description_white{
@@ -769,7 +825,7 @@ td.today {
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 3;
+    z-index: 1;
     animation: rotate infinite 6s linear;
 }
 
