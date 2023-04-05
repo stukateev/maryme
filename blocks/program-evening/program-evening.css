@@ -1,23 +1,4 @@
-@keyframes flicker {
 
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-
-        text-shadow:
-                0 0 4px #fff,
-                0 0 11px #fff,
-                0 0 19px #fff,
-                0 0 40px #ffffff,
-                0 0 80px #ffffff,
-                0 0 90px #ffffff,
-                0 0 100px #ffffff,
-                0 0 150px #ffffff;
-
-    }  20%, 24%, 55% {
-           text-shadow: none;
-       }   }
-.program-evening{
-
-}
 .program-evening__description{
 
     width: 100%;
@@ -45,14 +26,14 @@
     line-height: 70px;
     margin-bottom: 0;
     text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px #c03bd2,
-    0 0 82px #c03bd2,
-    0 0 92px #c03bd2,
-    0 0 102px #c03bd2,
-    0 0 151px #c03bd2;;
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #ffffff,
+            0 0 80px #ffffff,
+            0 0 90px #ffffff,
+            0 0 100px #ffffff,
+            0 0 150px #ffffff;;
     animation: flicker 1.5s infinite alternate;
 }
 .program-evening__description_address{
@@ -135,7 +116,6 @@
     }
 
     .program-evening__description_text{
-
         font-size: 24px;
         font-family: Montserrat-Light;
         margin: 30px;

@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const webpack = require('webpack');
 
 module.exports = {
     entry: { main: './src/pages/index.js' },
@@ -17,6 +18,15 @@ module.exports = {
         port: 8080,
         open: true
     },
+    resolve: {
+        fallback: {
+            https: require.resolve('https-browserify'),
+            http: require.resolve('stream-http'),
+            url: require.resolve('url/'),
+            buffer: require.resolve('buffer/'),
+        },
+    },
+
     module: {
         rules: [
             {
@@ -53,5 +63,8 @@ module.exports = {
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),
+        new webpack.ProvidePlugin({
+            https: 'https-browserify',
+        }),
     ]
 };

@@ -61,7 +61,7 @@
 
 <section class="program-evening">
     <div class="program-evening__description">
-        <h3 class="program-evening__description_text">ВЫЕЗДНАЯ РЕГИСТРАЦИЯ И ПОСЛЕДУЮЩИЙ ПРЕКРАСНЫЙ ВЕЧЕР БУДУТ ПРОХОДИТЬ
+        <h3 class="program-evening__description_text">ПРЕКРАСНЫЙ ВЕЧЕР БУДУТ ПРОХОДИТЬ
             В:</h3>
         <h4 class="program-evening__description_title" >АКАДЕМИЧЕСКОЙ ГАЛЕРЕЕ</h4>
         <p class="program-evening__description_address">// г. Пятигорск, ул. Красноармейская 30</p>
@@ -70,7 +70,7 @@
         <div  class= " program-evening__run-text" ><p style="margin: 0">ПРОГРАММА ВЕЧЕРА &nbsp;&nbsp;&nbsp;&nbsp; ПРОГРАММА ВЕЧЕРА &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ПРОГРАММА ВЕЧЕРА &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ПРОГРАММА ВЕЧЕРА&nbsp;</p></div>
             <div class="program-evening__times">
                 <div class="program-evening__time">
-                    <h3 class="program-evening__time_clock">16:00</h3>
+                    <h3 class="program-evening__time_clock">16:30</h3>
                     <p class="program-evening__time_description">СБОР ГОСТЕЙ.</p>
                 </div>
                 <div class="program-evening__time ">
@@ -87,7 +87,7 @@
     <h3 class="wishes__img_dancing" >ТАНЦУЮТ ВСЕ!</h3>
     <p class="wishes__description">НЕ ЗАБЫВАЙТЕ, ЧТО НАСТРОЕНИЕ ПРАЗДНИКА СОЗДАЁТЕ ИМЕННО ВЫ, НАШИ ДОРОГИЕ ГОСТИ, ПОЭТОМУ В ОБЯЗАТЕЛЬНОМ ПОРЯДКЕ ВСЕ НЕПЬЮЩИЕ - ПЬЮТ, НЕ ТАНЦУЮЩИЕ - ТАНЦУЮТ, БЕЗГОЛОСЫЕ - ПОЮТ.
     </p>
-<p class="wishes__description wishes__description_white">ОСЛУШАВШИХСЯ ОТПРАВЛЯЕМ ПО УЖЕ ИЗВЕСТНОМУ АДРЕСУ - СЕЛО БУРАНГУЛОВО, УЛ.КИЗИЛЬСКАЯ 1, КАФЕ «КАРЛУГАС».</p>
+<p class="wishes__description wishes__description_white">ОСЛУШАВШИХСЯ ОТПРАВЛЯЕМ ПО АДРЕСУ - <b >ХУТОР ДАДЫМОВКА, УЛ. ЛУГОВАЯ, 3, "ТАВЕРНА РУЛЬКА".</b></p>
     <h3 style="margin-top: 50px" class="wishes__img wishes__img_dancing" >ХЭШТЕГ!</h3>
     <p class="wishes__description">ДЛЯ ПУБЛИКАЦИИ ФОТОГРАФИЙ С НАШЕЙ СВАДЬБЫ ВОСПОЛЬЗУЙТЕСЬ ХЭШТЕГОМ <b>#ВЭДДИНГКЭТИНГВЛЭДИНГ</b> , ЭТО ПОЗВОЛИТ НАМ НАСЛАДИТЬСЯ ФОТОГРАФИЯМИ.</p>
     <p class="wishes__description wishes__description_white">ПРОСЬБА С ТЕЛЕФОНОВ ”RETINA”, “ALCATEL”, “HTC” И ”PRESTIGIO” ФОТО НЕ ВЫКЛАДЫВАТЬ, МЫ НА НИХ НЕ ПОЛУЧАЕМСЯ.</p>
@@ -105,7 +105,7 @@
             <div class="dress-code__cube" style="background: #c99584"></div>
             <div class="dress-code__cube" style="background: #ac9b91"></div>
         </div>
-        <p class="dress-code__description-2" >А ЕСЛИ НЕ ПОДБЕРЕТЕ, ТО ДЛЯ ВАС НАША СВАДЬБА ПРОХОДИТ ПО АДРЕСУ - <b >ХУТОР ДАДЫМОВКА, УЛ. ЛУГОВАЯ, 3, "ТАВЕРНА РУЛЬКА".</b>
+        <p class="dress-code__description-2" >А ЕСЛИ НЕ ПОДБЕРЕТЕ, ТО ДЛЯ ВАС НАША СВАДЬБА ПРОХОДИТ ПО АДРЕСУ - <b>ХУТОР ДАДЫМОВКА, УЛ. ЛУГОВАЯ, 3, "ТАВЕРНА РУЛЬКА".</b>
         </p>
 
     </section>
@@ -128,22 +128,45 @@
 <div class="popup popup__chose-color ">
     <div class="popup__content">
         <button type="button" class=" button popup__close"></button>
-        <h2 class="popup__title">Изменить цвета</h2>
+        <h2 class="popup__title">Подтвердите ваше присутствие</h2>
         <form class="popup__form" name="chose-color-form">
-            <input id="background-input" type="text" name="background" class="popup__input popup__input_type_background "
-                   placeholder="HEX Фона" autocomplete="off" minlength="6" maxlength="7" required>
-            <div class="popup__box popup__box-background"></div>
+            <span class="popup__text"> Ваши Имя и Фамилия </span>
+            <input id="guest" type="text" name="guest" class="popup__input popup__input_type_background "
+                   placeholder="Иван Иванов, Иванова Мария" autocomplete="off" minlength="6" maxlength="107" required>
             <span class="background-input-error popup__input-error"></span>
-            <input id="text-input" type="text" name="text" class="popup__input popup__input_type_text "
-                   placeholder="HEX Текста" autocomplete="off" minlength="6" maxlength="7"  required>
-            <div class="popup__box popup__box-text"></div>
-            <span class="text-input-error popup__input-error"></span>
 
-            <input id="grave-input" type="text" name="grave" class="popup__input popup__input_type_grave "
-                   placeholder="HEX Могилы" autocomplete="off" minlength="6" maxlength="7"  required>
-            <div class="popup__box popup__box-grave"></div>
+            <span class="popup__text"> Подтвердите ваше присутствие </span>
+            <div class="popup__box">
+                <input type="checkbox" id="yes"  name="invite" class="popup__input popup__input_type_checkbox popup__input_type_checkbox-invite" >
+                <label class=" popup__box-text" for="yes"> Обязательно приду (придём)</label>
+            </div>
+            <div class="popup__box">
+                <input type="checkbox" id="no"  name="invite" class="popup__input_type_checkbox popup__input_type_checkbox-invite"  >
+                <label for="no" class=" popup__box-text">  "Добавьте мой номер в ЧС ..."</label>
+            </div>
+
+            <span class="popup__text" style="margin-top: 40px "> Какой алкоголь вы предпочитаете?</span>
+            <div class="popup__box">
+                <input type="checkbox" id="Вино"  name="alcohol" class="popup__input popup__input_type_checkbox  popup__input_type_grave " >
+                <label class=" popup__box-text" for="Вино"> Вино</label>
+            </div>
+            <div class="popup__box">
+                <input type="checkbox" id="Водка"  name="alcohol" class="popup__input popup__input_type_checkbox  popup__input_type_grave " >
+                <label class=" popup__box-text" for="Водка"> Водка </label>
+            </div>
+            <div class="popup__box">
+                <input type="checkbox" id="Коньяк"  name="alcohol" class="popup__input popup__input_type_checkbox  popup__input_type_grave " >
+                <label class=" popup__box-text" for="Коньяк"> Коньяк </label>
+            </div>
+            <div class="popup__box">
+                <div class="popup__box_no">
+                    <input type="checkbox" id="not"  name="alcohol" class="popup__input popup__input_type_checkbox popup__input_type_checkbox-no  popup__input_type_grave " >
+                    <label class=" popup__box-text" for="not"> Ничего </label>
+                </div>
+            </div>
+
             <span class="grave-input-error popup__input-error"></span>
-            <button type="submit" name="submit" class="button popup__button ">Сохранить</button>
+            <button type="submit" name="submit" class="button popup__button "> Отправить </button>
         </form>
     </div>
 </div>

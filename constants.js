@@ -12,7 +12,7 @@ export const gravePage = [
                             document.querySelector(".wedding-party__description"),
                             document.querySelector(".date__description"),
                         ]
-export const buttonChoseColor = document.querySelector(".header__chose-color");
+export const buttonApply = document.querySelector(".footer__button");
 export const selectors = {
     formSelector: '.popup__form',
     inputSelector: '.popup__input',

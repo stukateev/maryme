@@ -40,7 +40,7 @@
     max-width: 1000px;
     margin-top: 50px;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
 .wishes__description_white{
@@ -57,7 +57,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 3;
+    z-index: 1;
     animation: rotate infinite 6s linear;
 }
 
