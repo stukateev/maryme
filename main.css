@@ -11,12 +11,7 @@ h2{
     text-align: center;
     font-weight: bold;
 }
-.header{
 
-}
-.header__date{
-
-}
 .header_e{
     margin: 0;
     margin-top: 55px;
@@ -44,8 +39,6 @@ h2{
 }
 
 .header__img{
-
-
     z-index: -1;
     animation: rotate infinite 6s linear;
 }
@@ -58,8 +51,6 @@ h2{
     margin: 0;
     margin-top: 200px;
 }
-
-
 .header__chose-color{
     cursor: pointer;
     width: 300px;
@@ -80,7 +71,6 @@ h2{
     transform: translateX(-5px) translateY(-5px) scale(1.1);
     box-shadow: #735ca2 12px 12px 10px;
 }
-
 .header__run-text {
     width: 100%;
     font-size: 70px;
@@ -100,8 +90,6 @@ h2{
     padding-left: 100%;
     animation: marquee 15s linear infinite;
 }
-
-
 @media screen and (max-width: 768px) {
     h2{
         text-align: center;
@@ -594,6 +582,182 @@ td.today {
     }
 
 }
+
+.wishes{
+    padding-top: 100px;
+    background-color: #8b8ecb;
+    min-height: 500px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    position: relative;
+    background-image:  linear-gradient(rgb(161, 133, 148), rgb(255, 213, 145) );
+}
+
+.wishes__description{
+    font-family: Montserrat-Light;
+    font-size: 20px;
+    max-width: 1000px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.wishes__description_white{
+    color: white;
+}
+.wishes__img{
+    max-width: 850px;
+}
+.wishes__img_dancing{
+    max-height: 100px;
+}
+.wishes__star{
+    width: 350px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    animation: rotate infinite 6s linear;
+}
+
+.wishes__img_dancing{
+    margin: 0;
+    max-width: 700px;
+    font-family: Fagotcondoutlinec, serif;
+    font-size: 100px;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .wishes{
+        padding: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .wishes__img{
+        margin-top: 50px;
+        width: 350px;
+    }
+    .wishes__img_dancing{
+        font-size: 46px;
+    }
+    .dress-code__title{
+        font-size: 46px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .wishes__img{
+        width: 300px;
+    }
+}
+
+
+.footer{
+    padding-top: 250px;
+    background-image:  linear-gradient(rgb(255, 213, 145), rgb(161, 133, 148) );
+    min-height: 500px;
+}
+.footer__grave{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer__grave_head{
+    border-radius: 1000px 1000px 0 0 ;
+    width: 100%;
+    min-height: 500px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+}
+
+.footer__text{
+    color: rgb(255, 213, 145);
+    font-family: Montserrat-Light;
+    font-size: 60px;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 100px;
+    max-width: 80%;
+}
+
+.footer__img{
+    margin-top: -235px;
+    width: 500px;
+    height: 500px;
+    background-image: url(images/10_Point_Star_2.b925d8ed0d6ef9563849.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+}
+
+.footer__img_sphere{
+    max-height: 370px;
+    width: 50%;
+    object-fit: contain;
+    margin-left: auto;
+    padding-left: 15px;
+    margin-right: auto;
+}
+
+.footer__title{
+    margin: 0;
+    margin-top: 50px;
+    font-family: Fagotcondoutlinec, serif;
+    font-size: 110px;
+    color: white;
+}
+
+.footer__button{
+    margin-top: 100px;
+    background: rgb(161, 133, 148);
+    min-height: 100px;
+    width: 800px;
+    font-size: 40px;
+    color: white;
+    font-family: Montserrat-Light;
+    margin-bottom: 50px;
+    cursor: pointer;
+    border: none;
+}
+.footer__button_disabled{
+    background: gray;
+
+}
+@media screen and (max-width: 768px) {
+    .footer__img_sphere{
+        padding-left: 8px;
+        height: 150px;
+    }
+    .footer{
+        padding-top: 100px;}
+    .footer__img{
+        margin-top: -88px;
+        width: 200px;
+        height: 200px;
+    }
+    .footer__text{
+        margin-top: 20px;
+        font-size: 24px;
+    }
+    .footer__title{
+        font-size: 50px;
+        margin-top: 30px;
+        font-weight: bold;
+    }
+    .footer__button{
+        margin-top: 50px;
+        width: 80%;
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+}
 .popup__chose-color{
     visibility: hidden;
     opacity: 0;
@@ -791,176 +955,6 @@ td.today {
 }
 
 
-.wishes{
-    padding-top: 100px;
-    background-color: #8b8ecb;
-    min-height: 500px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 50px;
-    position: relative;
-    background-image:  linear-gradient(rgb(161, 133, 148), rgb(255, 213, 145) );
-}
-
-.wishes__description{
-    font-family: Montserrat-Light;
-    font-size: 20px;
-    max-width: 1000px;
-    margin-top: 50px;
-    position: relative;
-    z-index: 1;
-}
-
-.wishes__description_white{
-    color: white;
-}
-.wishes__img{
-    max-width: 850px;
-}
-.wishes__img_dancing{
-    max-height: 100px;
-}
-.wishes__star{
-    width: 350px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1;
-    animation: rotate infinite 6s linear;
-}
-
-.wishes__img_dancing{
-    margin: 0;
-    max-width: 700px;
-    font-family: Fagotcondoutlinec, serif;
-    font-size: 100px;
-    color: white;
-}
-
-@media screen and (max-width: 768px) {
-    .wishes{
-        padding: 0;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .wishes__img{
-        margin-top: 50px;
-        width: 350px;
-    }
-    .wishes__img_dancing{
-        font-size: 46px;
-    }
-    .dress-code__title{
-        font-size: 46px;
-    }
-}
-@media screen and (max-width: 360px) {
-    .wishes__img{
-        width: 300px;
-    }
-}
-
-.footer{
-    padding-top: 250px;
-    background-image:  linear-gradient(rgb(255, 213, 145), rgb(161, 133, 148) );
-    min-height: 500px;
-}
-.footer__grave{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.footer__grave_head{
-    border-radius: 1000px 1000px 0 0 ;
-    width: 100%;
-    min-height: 500px;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: normal;
-    align-items: center;
-}
-
-.footer__text{
-    color: rgb(255, 213, 145);
-    font-family: Montserrat-Light;
-    font-size: 60px;
-    margin: 0;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    margin-top: 100px;
-    max-width: 80%;
-}
-
-.footer__img{
-    margin-top: -235px;
-    width: 500px;
-    height: 500px;
-    background-image: url(images/10_Point_Star_2.b925d8ed0d6ef9563849.png) ;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-}
-
-.footer__img_sphere{
-    max-height: 370px;
-    width: 50%;
-    object-fit: contain;
-    margin-left: auto;
-    padding-left: 15px;
-    margin-right: auto;
-}
-
-.footer__title{
-    margin: 0;
-    margin-top: 50px;
-    font-family: Fagotcondoutlinec, serif;
-    font-size: 110px;
-    color: white;
-}
-
-.footer__button{
-    margin-top: 100px;
-    background: rgb(161, 133, 148);
-    min-height: 100px;
-    width: 800px;
-    font-size: 40px;
-    color: white;
-    font-family: Montserrat-Light;
-    margin-bottom: 50px;
-    cursor: pointer;
-    border: none;
-}
-@media screen and (max-width: 768px) {
-    .footer__img_sphere{
-        padding-left: 8px;
-        height: 150px;
-    }
-    .footer{
-        padding-top: 100px;}
-    .footer__img{
-        margin-top: -88px;
-        width: 200px;
-        height: 200px;
-    }
-    .footer__text{
-        margin-top: 20px;
-        font-size: 24px;
-    }
-    .footer__title{
-        font-size: 50px;
-        margin-top: 30px;
-        font-weight: bold;
-    }
-    .footer__button{
-        margin-top: 50px;
-        width: 80%;
-        font-size: 26px;
-        margin-bottom: 10px;
-    }
-}
 @font-face {
     font-family: "UntitledJapanese";
     src: url(fonts/ofont.ru_UntitledJapanese.9497676ba7a429cb27f5.ttf) format("truetype");
